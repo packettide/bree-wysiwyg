@@ -1,0 +1,26 @@
+{
+    "name": "packettide/bree-wysiwyg",
+    "description": "A WYSIWYG field package for Bree",
+    "keywords": [
+        "laravel",
+        "bree",
+        "fieldtype"
+    ],
+    "authors": [
+        {
+            "name": "Bryan Nielsen",
+            "email": "bryan@packettide.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x",
+        "packettide/bree": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Packettide\\BreeWysiwyg": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
