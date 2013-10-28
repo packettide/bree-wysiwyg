@@ -9,7 +9,7 @@ For licensing, see LICENSE.md or http://ckeditor.com/license
 	line-height: 1.6em;
 }
 
-blockquote
+.cke_editable blockquote
 {
 	font-style: italic;
 	font-family: Georgia, Times, "Times New Roman", serif;
@@ -33,12 +33,12 @@ blockquote
 	border-right-width: 5px;
 }
 
-a
+.cke_editable a
 {
 	color: #0782C1;
 }
 
-ol,ul,dl
+.cke_editable ol, .cke_editable ul, .cke_editable dl
 {
 	/* IE7: reset rtl list margin. (#7334) */
 	*margin-right: 0px;
@@ -46,19 +46,19 @@ ol,ul,dl
 	padding: 0 40px;
 }
 
-h1,h2,h3,h4,h5,h6
+.cke_editable h1, .cke_editable h2, .cke_editable h3, .cke_editable h4, .cke_editable h5, .cke_editable h6
 {
 	font-weight: normal;
 	line-height: 1.2em;
 }
 
-hr
+.cke_editable hr
 {
 	border: 0px;
 	border-top: 1px solid #ccc;
 }
 
-img.right
+.cke_editable img.right
 {
 	border: 1px solid #ccc;
 	float: right;
@@ -66,7 +66,7 @@ img.right
 	padding: 5px;
 }
 
-img.left
+.cke_editable img.left
 {
 	border: 1px solid #ccc;
 	float: left;
@@ -75,19 +75,19 @@ img.left
 }
 
 /* #10868: We use :not() selector to exclude IE8, which crashes on img:hover style. */
-:not(.ie8) img:hover
+:not(.ie8) .cke_editable img:hover
 {
 	opacity: .9;
 	filter: alpha(opacity = 90);
 }
 
-pre
+.cke_editable pre
 {
 	white-space: pre-wrap; /* CSS 2.1 */
 	word-wrap: break-word; /* IE7 */
 }
 
-.marker
+.cke_editable .marker
 {
 	background-color: Yellow;
 }
