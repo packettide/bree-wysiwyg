@@ -4,15 +4,10 @@ Wysiwyg is a field package for [Bree](https://github.com/packettide/bree) which 
 
 ##Installation
 
-Install with composer by adding this line to your 'require' block:
-
-    "packettide/bree-wysiwyg": "@dev"
-
-In Laravel4 add `'Packettide\BreeWysiwyg\BreeWysiwygServiceProvider',` to the providers array in app/config/app.php
-
-Publish the package assets:
-
-	php artisan asset:publish packettide/bree-wysiwyg
+1. Install with composer by adding this line to your 'require' block:`"packettide/bree-wysiwyg": "@dev"`
+2. Run `composer update`
+3. In Laravel4 add `'Packettide\BreeWysiwyg\BreeWysiwygServiceProvider',` to the providers array in app/config/app.php
+4. Publish the package assets:	`php artisan bree:assets`
 
 ##Usage
 
