@@ -7,8 +7,7 @@ class BreeWysiwygAdvanced extends FieldType {
 	protected static $assets = array(
 			'packettide/bree-wysiwyg/ckeditor/contents.css',
 			'packettide/bree-wysiwyg/ckeditor/ckeditor.js',
-			'packettide/bree-wysiwyg/ckeditor/adapters/jquery.js',
-			'packettide/bree-wysiwyg/wysiwyg.advanced.js'
+			'packettide/bree-wysiwyg/ckeditor/adapters/jquery.js'
 		);
 
 	public function __construct($name, $data, $options=array())
@@ -19,10 +18,10 @@ class BreeWysiwygAdvanced extends FieldType {
 		$this->attributes['class'][] = 'pt-wysiwyg';
 	}
 
-	public function field($attributes = array())
+	public function generateField($name, $data, $attributes = array())
 	{
-		$attrs = $this->getFieldAttributes($attributes);
-		return '<textarea name="'.$this->name.'" type="text" id="'.$this->name.'" '.$attrs.'>'.$this->data.'</textarea>';
+		return '<textarea name="'.$name.'" type="text" id="'.$name.'" '.$attributes.'>'.$data.'</textarea>'. "\n" .
+				'<script>$(function() { $(".pt-wysiwyg").ckeditor(); });</script>';
 	}
 
 
